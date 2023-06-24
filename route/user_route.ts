@@ -128,7 +128,7 @@ router.route("/login").post((req:Request, res:Response, next:NextFunction) => {
     });
 });
 
-router.route("/assess/:id/:id").put((req:Request, res:Response, next:NextFunction) => {
+router.route("/assess/:id/:id").put(verifyToken,(req:Request, res:Response, next:NextFunction) => {
   userSchemaVac
     .findByIdAndUpdate(req.params.id, {
       $set: req.body,
