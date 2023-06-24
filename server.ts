@@ -22,7 +22,7 @@ mongoose.connect(dbConfig).then(() => {
 app.use("/admin", admin);
 app.use("/", userRoute);
 
-const port = process.env.PORT || 5000;
+/*const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log("Node Server has Started at Port " + port);
-});
+});*/
