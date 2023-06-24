@@ -2,7 +2,6 @@ import express,{ Request, Response, NextFunction } from 'express';
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import userSchema from "../models/user";
-
 import userSchemaVac from "../models/vaccine";
 
 const secretKey = "nothing";

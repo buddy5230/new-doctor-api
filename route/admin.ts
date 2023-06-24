@@ -1,5 +1,3 @@
-
-
 import express, { Express, Request, Response, NextFunction } from 'express';
 import userSchemaVac from '../models/vaccine';
 
